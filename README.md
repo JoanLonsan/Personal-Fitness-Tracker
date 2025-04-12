@@ -1,66 +1,66 @@
 # 🏋️‍♂️ Fitness Tracker – Data Analysis & Visualization
 
-Este proyecto analiza y visualiza datos personales de salud y fitness, integrando análisis exploratorio de datos (EDA), visualizaciones interactivas con Plotly y algunos insights clave sobre actividad física, sueño, frecuencia cardíaca y más.
+This project focuses on analyzing and visualizing personal health and fitness data by combining Exploratory Data Analysis (EDA), interactive visualizations with Plotly, and key insights into activity levels, sleep, heart rate, and more.
 
 ---
 
-## 📂 Contenido del proyecto
+## 📂 Project Contents
 
-- **Notebook principal**: `FitnessTracker.ipynb`
-- **Fuente de datos**: CSV de seguimiento personal con métricas diarias
-- **Lenguaje**: Python
-- **Librerías principales**: `pandas`, `plotly`, `statsmodels`, `numpy`
+- **Main notebook**: `FitnessTracker.ipynb`
+- **Data source**: CSV file with daily fitness metrics
+- **Language**: Python
+- **Key libraries**: `pandas`, `plotly`, `statsmodels`, `numpy`
 
 ---
 
-## 📊 Dataset – Diccionario de datos
+## 📊 Dataset – Data Dictionary
 
-| Columna | Descripción |
+| Column | Description |
 |--------|-------------|
-| `date` | Fecha de registro |
-| `steps` | Número de pasos diarios |
-| `weight` | Peso corporal en kg |
-| `resting_heart_rate` | Frecuencia cardíaca en reposo |
-| `sleep_hours` | Horas de sueño |
-| `active_minutes` | Minutos activos totales |
-| `total_calories_burned` | Calorías quemadas en el día |
-| `fat_burn_minutes` | Minutos en zona de quema de grasa |
-| `cardio_minutes` | Minutos en zona cardio |
-| `peak_minutes` | Minutos en zona pico |
-| `workout_type` | Tipo de entrenamiento |
-| `workout_duration` | Duración del entrenamiento (min) |
-| `workout_calories` | Calorías quemadas en el entrenamiento |
-| `workout_avg_hr` | Frecuencia cardíaca promedio durante el entrenamiento |
-| `workout_max_hr` | Frecuencia cardíaca máxima durante el entrenamiento |
+| `date` | Date of entry |
+| `steps` | Total daily step count |
+| `weight` | Body weight in kilograms |
+| `resting_heart_rate` | Resting heart rate (BPM) |
+| `sleep_hours` | Total sleep duration (hours) |
+| `active_minutes` | Total minutes of physical activity |
+| `total_calories_burned` | Total daily energy expenditure |
+| `fat_burn_minutes` | Time spent in fat burn heart rate zone |
+| `cardio_minutes` | Time in cardio heart rate zone |
+| `peak_minutes` | Time in peak heart rate zone |
+| `workout_type` | Type of workout performed |
+| `workout_duration` | Duration of workout session (minutes) |
+| `workout_calories` | Calories burned during workout |
+| `workout_avg_hr` | Average heart rate during workout |
+| `workout_max_hr` | Maximum heart rate during workout |
 
 ---
 
-## 🔍 Secciones del notebook
+## 🔍 Notebook Structure
 
 1. **Exploratory Data Analysis (EDA)**  
-   - Estadísticas descriptivas  
-   - Valores faltantes  
-   - Limpieza de datos  
+   - Descriptive statistics  
+   - Missing values check  
+   - Data cleaning  
 
 2. **Feature Engineering**  
-   - Nuevas columnas como identificación de fines de semana, calorías netas, etc.
+   - New columns such as weekend detection, net calories, etc.
 
-3. **Visualización de Datos**  
-   - Histogramas de pasos  
-   - Diagramas de dispersión (`scatter plots`) con línea de regresión  
-   - Gráficos interactivos con Plotly
+3. **Data Visualization**  
+   - Step distribution histograms  
+   - Scatter plots with linear regression  
+   - Interactive charts using Plotly
 
-4. **Insights & Observaciones**  
-   - Relaciones entre pasos y calorías  
-   - Impacto del sueño y la frecuencia cardíaca  
-   - Comparación entre tipos de ejercicio
+4. **Insights & Observations**  
+   - Relationship between steps and calories burned  
+   - Impact of sleep and resting heart rate  
+   - Comparison of workout types
 
 ---
 
-## ▶️ Cómo correr el proyecto
+## ▶️ How to Run the Project
 
-1. Crear y activar un entorno virtual:
+1. Create and activate a virtual environment:
 
 ```bash
 python -m venv venv
-source venv/bin/activate  # o .\venv\Scripts\activate en Windows
+source venv/bin/activate  # or .\venv\Scripts\activate on Windows
